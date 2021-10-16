@@ -86,7 +86,7 @@ input {
 
 .slider-container .bullets {
   position: absolute;
-  left: 90%;
+  left: 85%;
   top: 650px;
   z-index: 1000;
 }
@@ -94,12 +94,12 @@ input {
 .slider-container label {
   display: inline-block;
   position: relative;
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   margin: 25px 12px 0 16px;
   border-radius: 50%;
   cursor: pointer;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 }
 
 .img1 {
@@ -123,16 +123,13 @@ input {
   background: url("./4.jpg") no-repeat;
 }
 
-.slider-container label:hover {
-  filter: brightness(200%);
-}
-
 .slider-container label:hover,
 #slide1:checked ~ .bullets label:nth-of-type(1),
 #slide2:checked ~ .bullets label:nth-of-type(2),
 #slide3:checked ~ .bullets label:nth-of-type(3),
 #slide4:checked ~ .bullets label:nth-of-type(4) {
   background: black;
+  filter: brightness(200%);
 }
 
 .slider-container label::after {
@@ -141,9 +138,9 @@ input {
   content: " ";
   width: 12px;
   height: 12px;
-  left: -5px;
-  top: -5px;
-  border: 3px solid cadetblue;
+  left: -3px;
+  top: -3px;
+  border: 4px solid cadetblue;
   border-radius: 50%;
 }
 
@@ -215,7 +212,7 @@ footer {
 
   .slider-container .bullets {
     position: absolute;
-    left: 30%;
+    left: 27%;
     top: 400px;
     z-index: 1000;
   }
