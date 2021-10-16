@@ -61,7 +61,7 @@ input {
   height: inherit;
   overflow-x: hidden;
   border-radius: 15px;
-  background-color: gray;
+  background-color: rgb(58, 58, 58);
 }
 
 .slides {
@@ -169,7 +169,11 @@ footer {
 }
 
 @media (max-width: 420px) {
-  body,
+  body {
+    max-width: 420px;
+    height: 610px;
+  }
+
   header {
     max-width: 420px;
   }
